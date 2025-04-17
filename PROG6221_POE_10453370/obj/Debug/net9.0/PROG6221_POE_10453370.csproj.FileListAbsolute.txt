@@ -1,0 +1,4 @@
+C:\Users\lab_services_student\Desktop\PROG PEO\PROG6221_POE_10453370\obj\Debug\net9.0\PROG6221_POE_10453370.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\lab_services_student\Desktop\PROG PEO\PROG6221_POE_10453370\obj\Debug\net9.0\PROG6221_POE_10453370.AssemblyInfoInputs.cache
+C:\Users\lab_services_student\Desktop\PROG PEO\PROG6221_POE_10453370\obj\Debug\net9.0\PROG6221_POE_10453370.AssemblyInfo.cs
+C:\Users\lab_services_student\Desktop\PROG PEO\PROG6221_POE_10453370\obj\Debug\net9.0\PROG6221_POE_10453370.csproj.CoreCompileInputs.cache

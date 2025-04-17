@@ -1,0 +1,21 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+	  <TargetFramework>net9.0-windows</TargetFramework>
+	  <UseWindowsForms>true</UseWindowsForms>
+	  <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="AIVoiceGenerator_com_10-04-2025T13_48_8_ Matthew.wav" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="AIVoiceGenerator_com_10-04-2025T13_48_8_ Matthew.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+</Project>
