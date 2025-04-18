@@ -14,7 +14,7 @@ namespace PROG6221_POE_10453370
             if (questions.Contains("How are you"))
             {
                 Console.ForegroundColor = ConsoleColor.Green;
-                Console.WriteLine("I am always well as i am robotic. I was hardcoded by my creator to always be well and positive. Thanks for asking " + User.);
+                Console.WriteLine("I am always well as i am robotic. I was hardcoded by my creator to always be well and positive.");
             } else
             if (questions.Contains("What is your purpose"))
             {

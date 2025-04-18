@@ -13,19 +13,8 @@ C:\Users\lab_services_student\Desktop\PROG PEO\PROG6221_POE_10453370\obj\Debug\n
 C:\Users\lab_services_student\Desktop\PROG PEO\PROG6221_POE_10453370\obj\Debug\net9.0-windows\PROG6221_POE_10453370.genruntimeconfig.cache
 C:\Users\lab_services_student\Desktop\PROG PEO\PROG6221_POE_10453370\obj\Debug\net9.0-windows\ref\PROG6221_POE_10453370.dll
 C:\Users\lab_services_student\Desktop\PROG PEO\PROG6221_POE_10453370\bin\Debug\net9.0-windows\AIVoiceGenerator_com_10-04-2025T13_48_8_ Matthew.wav
-C:\Users\lab_services_student\Desktop\PROG POE\prog6221-st10453370-poe-part1\PROG6221_POE_10453370\bin\Debug\net9.0-windows\AIVoiceGenerator_com_10-04-2025T13_48_8_ Matthew.wav
-C:\Users\lab_services_student\Desktop\PROG POE\prog6221-st10453370-poe-part1\PROG6221_POE_10453370\bin\Debug\net9.0-windows\PROG6221_POE_10453370.exe
-C:\Users\lab_services_student\Desktop\PROG POE\prog6221-st10453370-poe-part1\PROG6221_POE_10453370\bin\Debug\net9.0-windows\PROG6221_POE_10453370.deps.json
-C:\Users\lab_services_student\Desktop\PROG POE\prog6221-st10453370-poe-part1\PROG6221_POE_10453370\bin\Debug\net9.0-windows\PROG6221_POE_10453370.runtimeconfig.json
-C:\Users\lab_services_student\Desktop\PROG POE\prog6221-st10453370-poe-part1\PROG6221_POE_10453370\bin\Debug\net9.0-windows\PROG6221_POE_10453370.dll
-C:\Users\lab_services_student\Desktop\PROG POE\prog6221-st10453370-poe-part1\PROG6221_POE_10453370\bin\Debug\net9.0-windows\PROG6221_POE_10453370.pdb
 C:\Users\lab_services_student\Desktop\PROG POE\prog6221-st10453370-poe-part1\PROG6221_POE_10453370\obj\Debug\net9.0-windows\PROG6221_POE_10453370.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\lab_services_student\Desktop\PROG POE\prog6221-st10453370-poe-part1\PROG6221_POE_10453370\obj\Debug\net9.0-windows\PROG6221_POE_10453370.AssemblyInfoInputs.cache
 C:\Users\lab_services_student\Desktop\PROG POE\prog6221-st10453370-poe-part1\PROG6221_POE_10453370\obj\Debug\net9.0-windows\PROG6221_POE_10453370.AssemblyInfo.cs
 C:\Users\lab_services_student\Desktop\PROG POE\prog6221-st10453370-poe-part1\PROG6221_POE_10453370\obj\Debug\net9.0-windows\PROG6221_POE_10453370.csproj.CoreCompileInputs.cache
 C:\Users\lab_services_student\Desktop\PROG POE\prog6221-st10453370-poe-part1\PROG6221_POE_10453370\obj\Debug\net9.0-windows\PROG6221_POE_10453370.sourcelink.json
-C:\Users\lab_services_student\Desktop\PROG POE\prog6221-st10453370-poe-part1\PROG6221_POE_10453370\obj\Debug\net9.0-windows\PROG6221_POE_10453370.dll
-C:\Users\lab_services_student\Desktop\PROG POE\prog6221-st10453370-poe-part1\PROG6221_POE_10453370\obj\Debug\net9.0-windows\refint\PROG6221_POE_10453370.dll
-C:\Users\lab_services_student\Desktop\PROG POE\prog6221-st10453370-poe-part1\PROG6221_POE_10453370\obj\Debug\net9.0-windows\PROG6221_POE_10453370.pdb
-C:\Users\lab_services_student\Desktop\PROG POE\prog6221-st10453370-poe-part1\PROG6221_POE_10453370\obj\Debug\net9.0-windows\PROG6221_POE_10453370.genruntimeconfig.cache
-C:\Users\lab_services_student\Desktop\PROG POE\prog6221-st10453370-poe-part1\PROG6221_POE_10453370\obj\Debug\net9.0-windows\ref\PROG6221_POE_10453370.dll
