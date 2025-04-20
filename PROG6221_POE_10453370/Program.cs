@@ -8,23 +8,25 @@ namespace PROG6221_POE_10453370
         static void Main(string[] args)
         {
 
-            User.ProgramOpen();
-            
-            User user = new User();
-
+            string art =Open.OpenArt();
+            Console.WriteLine(art);
+            Open.OpenSound();
+            Console.ForegroundColor = ConsoleColor.Blue;
+            string userName = Console.ReadLine();
             Console.ForegroundColor = ConsoleColor.Green;
-            Console.WriteLine("Hello " + user.GetNameUser() + ", its nice to meet you!");
+            Console.WriteLine("Hi " + userName + ". It is nice to meet you.") ;
 
+            Responses chatbot = new Responses(userName);
 
-            string userQuestion = " ";
+            string userQuestion = "How are you";
             while (userQuestion!= "Bye")
             {
                 Console.WriteLine("");
                 Console.ForegroundColor = ConsoleColor.Yellow;
-                Console.WriteLine("Ask me a Cybersecurity related question or type 'Stop' to end the chat: ");
+                Console.WriteLine("Ask me a Cybersecurity related question or type 'Bye' to end the chat: ");
                 Console.ForegroundColor = ConsoleColor.Blue;
                 userQuestion = Console.ReadLine();
-                Question question = new Question(userQuestion);
+                Console.WriteLine(chatbot.Response(userQuestion));
             }
 
             

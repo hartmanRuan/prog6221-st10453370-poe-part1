@@ -9,14 +9,15 @@ namespace PROG6221_POE_10453370
 {
     class Open
     {
-        public static void ProgramOpen()//-----------------------------------------------------------------------
+        public static string OpenArt()//-----------------------------------------------------------------------
         {
             //Ascii Art
             Console.ForegroundColor = ConsoleColor.Yellow;
+            return("    #############     \r\n    ##         ##     \r\n    #  ~~   ~~  #    \r\n    #  ()   ()  #    \r\n    (     ^     )    \r\n     |         |    \r\n     |  {===}  |    \r\n      \\       /      \r\n     /  -----  \\    \r\n  ---  |%\\ /%|  ---   \r\n /     |%%%%%|     \\   \r\n       |%/ \\%|       \r\n");
 
-            Console.Write("    #############     \r\n    ##         ##     \r\n    #  ~~   ~~  #    \r\n    #  ()   ()  #    \r\n    (     ^     )    \r\n     |         |    \r\n     |  {===}  |    \r\n      \\       /      \r\n     /  -----  \\    \r\n  ---  |%\\ /%|  ---   \r\n /     |%%%%%|     \\   \r\n       |%/ \\%|       \r\n");
-            
-            
+        }
+        public static void OpenSound()
+        { 
             //Sound with welcome message
             try
             {
