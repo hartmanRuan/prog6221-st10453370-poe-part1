@@ -12,8 +12,19 @@ namespace PROG6221_POE_10453370
         public static string OpenArt()//-----------------------------------------------------------------------
         {
             //Ascii Art
-            Console.ForegroundColor = ConsoleColor.Yellow;
-            return("    #############     \r\n    ##         ##     \r\n    #  ~~   ~~  #    \r\n    #  ()   ()  #    \r\n    (     ^     )    \r\n     |         |    \r\n     |  {===}  |    \r\n      \\       /      \r\n     /  -----  \\    \r\n  ---  |%\\ /%|  ---   \r\n /     |%%%%%|     \\   \r\n       |%/ \\%|       \r\n");
+            
+            return("    #############     \r\n" + //\r = goes back to start of current line
+                "    ##         ##     \r\n" +
+                "    #  ~~   ~~  #    \r\n" +
+                "    # (-)   (-) #    \r\n" +
+                "    (     ^     )    \r\n " +
+                "    |         |    \r\n" +
+                "     |  {===}  |    \r\n" +
+                "      \\       /      \r\n" +
+                "     /  -----  \\    \r\n" +
+                "  ---  |%\\ /%|  ---   \r\n" +
+                " /     |%%%%%|     \\   \r\n" +
+                "       |%/ \\%|       \r\n");
 
         }
         public static void OpenSound()
@@ -40,6 +51,23 @@ namespace PROG6221_POE_10453370
 
 
             }
+
+
+        }
+
+        public static void WelcomeMessage()
+        {
+            Console.ForegroundColor = ConsoleColor.White;
+            Console.BackgroundColor = ConsoleColor.DarkYellow;
+            Console.WriteLine("##      ## ######## ##        ######   #######  ##     ## ######## \r\n" +
+                              "##  ##  ## ##       ##       ##    ## ##     ## ###   ### ##       \r\n" +
+                              "##  ##  ## ##       ##       ##       ##     ## #### #### ##       \r\n" +
+                              "##  ##  ## ######   ##       ##       ##     ## ## ### ## ######   \r\n" +
+                              "##  ##  ## ##       ##       ##       ##     ## ##     ## ##       \r\n" +
+                              "##  ##  ## ##       ##       ##    ## ##     ## ##     ## ##       \r\n" +
+                              " ###  ###  ######## ########  ######   #######  ##     ## ######## ");
+           
+            Console.BackgroundColor = ConsoleColor.Black;
         }
         }
 }

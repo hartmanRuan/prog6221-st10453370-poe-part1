@@ -35,7 +35,7 @@ namespace PROG6221_POE_10453370
                                                     "DO NOT DOWNLOAD FILES FROM RANDOM SITES!!! This is a way which malware can make it on your computer. Websites can disguise these files and when you download them, the malware gets on your computer without you noticing.",
                                                     "Not a problem. Feel free to ask me more questions",
                                                     "Goodbye",
-                                                    "I see you want to view my logo... :) ...Here is my logo :",
+                                                    ", I see you want to view my logo... :) ...Here is my logo :",
                                                     "Invalid question detected. Please ask another question" };
 
 
@@ -55,6 +55,7 @@ namespace PROG6221_POE_10453370
                     count++;
                     if (questionRecieved.Equals("Logo"))
                     {
+                        Console.ForegroundColor = ConsoleColor.Green;
                         return userName + responseOutput[count - 1] + "\n" + Open.OpenArt();
                     }
                     if (questionRecieved.Equals("Bye"))
