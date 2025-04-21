@@ -75,5 +75,9 @@ namespace PROG6221_POE_10453370
     PatorJK. 2025. Text To Ascii Art Generator, 2025. [Online]. Available at:
     https://patorjk.com/software/taag/#p=display&f=Banner3&t=Welcome
     [Accessed 20/04/2025]
+
+    CodeGuru. 2018. Creating a typewriter effect in .NET, 19 September 2018. [Online]. Available at:
+    https://www.codeguru.com/dotnet/creating-a-typewriter-effect-in-net/
+    [Accessed 21/04/2025]
     */
 }
