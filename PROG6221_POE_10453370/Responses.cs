@@ -49,27 +49,35 @@ namespace PROG6221_POE_10453370
            
             for (int count = 0; count<12; )
             {
-                if (questionInput[count].Contains(questionRecieved))
+                if (questionRecieved.Equals(" "))
                 {
                     Console.ForegroundColor = ConsoleColor.Green;
-                    count++;
-                    if (questionRecieved.Equals("Logo"))
-                    {
-                        Console.ForegroundColor = ConsoleColor.Green;
-                        return userName + responseOutput[count - 1] + "\n" + Open.OpenArt();
-                    }
-                    if (questionRecieved.Equals("Bye"))
-                    {
-                        return "Goodbye " + userName + ". Until next time!";
-                    }
-                    return userName + ",that is a great question, " + responseOutput[count-1];
-                    
+                    return ("I didnt understand. Please try again " + userName );
                 }
                 else
                 {
-                    Console.ForegroundColor = ConsoleColor.Green;
-                    count++;
+                    if (questionInput[count].Contains(questionRecieved))
+                    {
+                        Console.ForegroundColor = ConsoleColor.Green;
+                        count++;
+                        if (questionRecieved.Equals("Logo"))
+                        {
+                            Console.ForegroundColor = ConsoleColor.Green;
+                            return userName + responseOutput[count - 1] + "\n" + Open.OpenArt();
+                        }
+                        if (questionRecieved.Equals("Bye"))
+                        {
+                            return "Goodbye " + userName + ". Until next time!";
+                        }
+                        return userName + ",that is a great question, " + responseOutput[count - 1];
 
+                    }
+                    else
+                    {
+                        Console.ForegroundColor = ConsoleColor.Green;
+                        count++;
+
+                    }
                 }
             }
             return "Sorry " + userName + " " + responseOutput[12];

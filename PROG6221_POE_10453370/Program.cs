@@ -3,6 +3,10 @@ namespace PROG6221_POE_10453370
 {
     using System;
     using System.Media;
+    using System.Threading;
+    using System.Threading.Tasks;
+   
+
     internal class Program
     {
         static void Main(string[] args)
@@ -17,23 +21,42 @@ namespace PROG6221_POE_10453370
             //Welcome messages
             Open.WelcomeMessage();
             Console.ForegroundColor = ConsoleColor.Green;
-            Console.WriteLine("Hi " + userName + ". It is nice to meet you.") ;
+            Console.WriteLine("Hi " + userName + ". Lets start this off.") ;
 
             Responses chatbot = new Responses(userName);
             //Start looping for questions
             string userQuestion = "How are you";
             while (userQuestion!= "Bye")
             {
+                Console.WriteLine("-----------------------------------------------------------------------------------------------------------------------");
                 Console.WriteLine("");
                 Console.ForegroundColor = ConsoleColor.Yellow;
                 Console.WriteLine("Ask me a Cybersecurity related question or type 'Bye' to end the chat: ");
                 Console.ForegroundColor = ConsoleColor.Blue;
                 userQuestion = Console.ReadLine();
+                DelaySpeech(userQuestion);
                 Console.WriteLine(chatbot.Response(userQuestion));
             }
             
             
             Console.ReadKey();
+        }
+
+        private static void DelaySpeech(string type)
+        {
+            string[] words = type.Split(' ');
+            Task t = Task.Run(() =>
+            {
+                foreach (string word in words)
+                {
+                    foreach (char letter in word)
+                    {
+                        Thread.Sleep(210); //Numbers indicate how long the pause is of the chatbot before responding
+                    }
+                    Thread.Sleep(300);
+                }
+            });
+            t.Wait();
         }
     }
 
