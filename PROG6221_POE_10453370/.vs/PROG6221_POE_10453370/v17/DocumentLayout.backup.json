@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\lab_services_student\\Desktop\\PROG POE\\prog6221-st10453370-poe-part1\\PROG6221_POE_10453370\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{5C92CBC1-769C-4121-A212-804B94AC1282}|PROG6221_POE_10453370.csproj|c:\\users\\lab_services_student\\desktop\\prog poe\\prog6221-st10453370-poe-part1\\prog6221_poe_10453370\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5C92CBC1-769C-4121-A212-804B94AC1282}|PROG6221_POE_10453370.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{5C92CBC1-769C-4121-A212-804B94AC1282}|PROG6221_POE_10453370.csproj|c:\\users\\lab_services_student\\desktop\\prog poe\\prog6221-st10453370-poe-part1\\prog6221_poe_10453370\\open.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5C92CBC1-769C-4121-A212-804B94AC1282}|PROG6221_POE_10453370.csproj|solutionrelative:open.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5C92CBC1-769C-4121-A212-804B94AC1282}|PROG6221_POE_10453370.csproj|c:\\users\\lab_services_student\\desktop\\prog poe\\prog6221-st10453370-poe-part1\\prog6221_poe_10453370\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5C92CBC1-769C-4121-A212-804B94AC1282}|PROG6221_POE_10453370.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{5C92CBC1-769C-4121-A212-804B94AC1282}|PROG6221_POE_10453370.csproj|c:\\users\\lab_services_student\\desktop\\prog poe\\prog6221-st10453370-poe-part1\\prog6221_poe_10453370\\chatbotresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -26,7 +26,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
@@ -54,25 +54,26 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "Open.cs",
               "DocumentMoniker": "C:\\Users\\lab_services_student\\Desktop\\PROG POE\\prog6221-st10453370-poe-part1\\PROG6221_POE_10453370\\Open.cs",
               "RelativeDocumentMoniker": "Open.cs",
               "ToolTip": "C:\\Users\\lab_services_student\\Desktop\\PROG POE\\prog6221-st10453370-poe-part1\\PROG6221_POE_10453370\\Open.cs",
               "RelativeToolTip": "Open.cs",
-              "ViewState": "AgIAAC0AAAAAAAAAAAAYwA4AAAAMAAAAAAAAAA==",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAA8AAAAUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-18T10:07:36.871Z"
+              "WhenOpened": "2025-04-18T10:07:36.871Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\lab_services_student\\Desktop\\PROG POE\\prog6221-st10453370-poe-part1\\PROG6221_POE_10453370\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "C:\\Users\\lab_services_student\\Desktop\\PROG POE\\prog6221-st10453370-poe-part1\\PROG6221_POE_10453370\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAADEAAAAAAAAAAAAQwFAAAAAZAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFAAAAAZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-17T05:52:31.248Z",
               "EditorCaption": ""
