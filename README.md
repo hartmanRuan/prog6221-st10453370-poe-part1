@@ -5,7 +5,7 @@ The project contains a cybersecurity chatbot called franky,due to its ascii art 
 
 The goal for the program is to enlighten its users of cybersecurity and threats as not many people are aware of the dangers and traps people fall in.
 
-
+When the code runs, provide the program with your name. This is for personalized responses. Then ask away. Questions like : "How are you", "Who created you", "Emergency", "Logo", "What is your purpose", " Phishing", "Password Safety", "Download Files"... etc. The chatbot will respond with information regarding your question and then ask for another question. This continues until you respond with "Bye". The program will then close
 
 
 
