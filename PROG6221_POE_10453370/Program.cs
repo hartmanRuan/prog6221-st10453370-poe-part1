@@ -26,7 +26,7 @@ namespace PROG6221_POE_10453370
             Responses chatbot = new Responses(userName);
             //Start looping for questions
             string userQuestion = "How are you";
-            while (userQuestion!= "Bye")
+            while (!userQuestion.ToLower().Contains("bye"))
             {
                 Console.WriteLine("-----------------------------------------------------------------------------------------------------------------------");
                 Console.WriteLine("");
@@ -51,9 +51,9 @@ namespace PROG6221_POE_10453370
                 {
                     foreach (char letter in word)
                     {
-                        Thread.Sleep(210); //Numbers indicate how long the pause is of the chatbot before responding
+                        Thread.Sleep(100); //Numbers indicate how long the pause is of the chatbot before responding
                     }
-                    Thread.Sleep(300);
+                    Thread.Sleep(120);
                 }
             });
             t.Wait();
