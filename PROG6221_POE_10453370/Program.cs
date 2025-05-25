@@ -24,6 +24,7 @@ namespace PROG6221_POE_10453370
             Console.WriteLine("Hi " + userName + ". Lets start this off.") ;
 
             Responses chatbot = new Responses(userName);
+            chatbot.SetFav();
             //Start looping for questions
             string userQuestion = "How are you";
             while (!userQuestion.ToLower().Contains("bye"))
@@ -37,8 +38,8 @@ namespace PROG6221_POE_10453370
                 DelaySpeech(userQuestion);
                 Console.WriteLine(chatbot.Response(userQuestion));
             }
-            
-            
+            chatbot.SetFav();
+
             Console.ReadKey();
         }
 

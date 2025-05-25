@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics.Metrics;
 using System.Diagnostics.PerformanceData;
 using System.Linq;
 using System.Text;
@@ -29,6 +30,7 @@ namespace PROG6221_POE_10453370
                                                     "Detail",
                                                     "Explain",
                                                     "Im interested in"
+                                                    
                                                     };
 
         //Array for all the responses
@@ -50,11 +52,19 @@ namespace PROG6221_POE_10453370
         
         int previousQuestion = 0;
         private string favourite = "";
+        private string topic = " ";
         private bool fav = false;
+        private bool sentiment = false;
+        private bool found = false;
 
         public Responses(string userName) : base(userName) 
         {
 
+        }
+
+        public void SetFav()
+        {
+            favourite = "";
         }
 
         public override string Response(string questionRecieved)
@@ -66,11 +76,13 @@ namespace PROG6221_POE_10453370
             {
                 random = (rnd.Next(0, 3)); 
             }
-            
-            
+
+            int count = 0;
+
             //Start loop
-            for (int count = 0; count<19; )
+            for ( count = 0; count<18; )
             {
+                
                 if (questionRecieved.Equals(" "))
                 {
                     Console.ForegroundColor = ConsoleColor.Green;
@@ -80,6 +92,7 @@ namespace PROG6221_POE_10453370
                 {
                     if (questionRecieved.ToLower().Contains(questionInput[count].ToLower()))
                     {
+                        found = true;
                         Console.ForegroundColor = ConsoleColor.Green;
                         count++;
                         if (questionRecieved.ToLower().Contains("logo"))
@@ -99,20 +112,69 @@ namespace PROG6221_POE_10453370
                         if (questionRecieved.ToLower().Contains("im interested in"))
                         {
                             fav = true;
-                            return Memory(questionRecieved);
+                            favourite = questionRecieved.Remove(0, 17);
+                            return Memory(questionRecieved, favourite);
                         }
+                        
                         else
                         {
+                            topic = questionInput[count-1];
                             previousQuestion = count;
                             if (fav == true)
                             {
-                                return "As you are interested in " + favourite + " ." + responseOutput1[count - 1, random];
+                                if (questionRecieved.ToLower().Contains(favourite))
+                                {
+                                    
+                                    return "As you are interested in " + favourite + " ." + responseOutput1[count - 1, random];
+                                }
+                                else 
+                                {
+                                    if (questionRecieved.ToLower().Contains("worried") || questionRecieved.ToLower().Contains("scared") || questionRecieved.ToLower().Contains("concerned"))
+                                    {
+
+                                        return Sentiment(questionRecieved, topic) + userName + ", " + responseOutput1[count - 1, random];
+                                    }
+                                    else
+                            if (questionInput[count].ToLower().Contains("curious") || questionRecieved.ToLower().Contains("wonder") || questionRecieved.ToLower().Contains("interested"))
+                                    {
+
+                                        return Sentiment(questionRecieved, topic) + userName + ", " + responseOutput1[count - 1, random];
+                                    }
+                                    else
+                            if (questionRecieved.ToLower().Contains("frustrated") || questionRecieved.ToLower().Contains("angry") || questionRecieved.ToLower().Contains("upset"))
+                                    {
+
+                                        return Sentiment(questionRecieved, topic) + userName + ", " + responseOutput1[count - 1, random];
+                                    }
+                                    else
+                                    {
+                                        return userName + ",that is a great question, " + responseOutput1[count - 1, random];
+                                    }
+                                }
+                            }
+                            else
+                            if (questionRecieved.ToLower().Contains("worried") || questionRecieved.ToLower().Contains("scared") || questionRecieved.ToLower().Contains("concerned"))
+                            {
+
+                                return Sentiment(questionRecieved, topic) + userName + ", " + responseOutput1[count-1 , random];
+                            }
+                            else
+                            if (questionInput[count].ToLower().Contains("curious") || questionRecieved.ToLower().Contains("wonder") || questionRecieved.ToLower().Contains("interested"))
+                            {
+                                
+                                return Sentiment(questionRecieved, topic) + userName + ", " + responseOutput1[count-1 , random];
+                            }
+                            else
+                            if (questionRecieved.ToLower().Contains("frustrated") || questionRecieved.ToLower().Contains("angry") || questionRecieved.ToLower().Contains("upset"))
+                            {
+                                
+                                return Sentiment(questionRecieved, topic) + userName + ", " + responseOutput1[count-1 , random];
                             }
                             else
                             {
-                                Console.WriteLine(fav);
                                 return userName + ",that is a great question, " + responseOutput1[count - 1, random];
                             }
+
                         }
                     }
                     else
@@ -123,7 +185,9 @@ namespace PROG6221_POE_10453370
                     }
                 }
             }
-            return "Sorry " + userName + " " + responseOutput1[14,random];
+            
+                return "Sorry " + userName + " " + responseOutput1[14, random];
+            
         }
 
         public string Confusion(int randomm, int prevCountt)
@@ -154,22 +218,56 @@ namespace PROG6221_POE_10453370
                
         }
 
-        public string Memory(string qReceived)
+        public string Memory(string qReceived, string favour)
         {
             int count = 0;
             fav = true;
-            favourite = qReceived.Remove(0,17);
+            
             
             while (count < questionInput.Length)
             {
                 if (questionInput[count].ToLower().Contains(favourite))
                 {
-                    return "Good to know " + userName + " . Ill keep the topic of " + favourite + " in mind for our future conversations.";
+                    return "Good to know " + userName + " . Ill keep the topic of " + favour + " in mind for our future conversations.";
                 }
                 count++;
             }
             
-            return "Good to know " + userName + " . Ill keep the topic of " + favourite + " in mind for future conversations.";
+            return "Good to know " + userName + " . Ill keep the topic of " + favour + " in mind for future conversations.";
+        }
+
+        public string Sentiment(string QReceived, string topic)
+        {
+            int count = 0;
+            sentiment = true;
+            
+            //Loop through question Input array
+            while (count < questionInput.Length)
+            {
+                if (QReceived.ToLower().Contains("worried") || QReceived.ToLower().Contains("scared") || QReceived.ToLower().Contains("concerned"))
+                {
+                    return "No need to worry about " +topic + "... It can be intimidating but here is more info regarding it: " ;
+                }
+                if (QReceived.ToLower().Contains("curious") || QReceived.ToLower().Contains("wonder") || QReceived.ToLower().Contains("interested"))
+                {
+                    return "I love the curiosity, here more information about " + topic + " : ";
+                }
+                if (QReceived.ToLower().Contains("frustrated") || QReceived.ToLower().Contains("angry") || QReceived.ToLower().Contains("upset"))
+                {
+                    return topic + " can be very frustrating. It important to be informed about " + topic + " so that you dont end up as a victim. Here is more info: ";
+                }
+                else
+                {
+                    count++;
+                    
+                }
+                    
+            }
+            return "Not found";
+
+            
         }
     }
+
+    
 }
